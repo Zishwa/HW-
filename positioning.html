@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning Examples</title>
+    <style>
+        .container {
+            position: relative;
+            height: 15000px;
+            border: 2px dashed #aaa;
+            margin-bottom: 30px;
+            background: #f9f9f9;
+        }
+        .static-box {
+            position: static;
+            background: #b3e5fc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .relative-box {
+            position: relative;
+            left: 40px;
+            top: 20px;
+            background: #ffe082;
+            padding: 10px;
+            margin: 10px;
+        }
+        .absolute-box {
+            position: absolute;
+            left: 150px;
+            top: 40px;
+            background: #ffab91;
+            padding: 10px;
+        }
+        .fixed-box {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #c5e1a5;
+            padding: 10px;
+            z-index: 10;
+            box-shadow: 0 2px 8px #888;
+        }
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background: #d1c4e9;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Examples</h1>
+    <p>This page demonstrates all the main types of positioning in CSS: <b>static</b>, <b>relative</b>, <b>absolute</b>, <b>fixed</b>, and <b>sticky</b>.</p>
+    
+    <div class="sticky-box">This is <b>sticky</b> positioning (sticks to top when scrolling).</div>
+    
+    <div class="container">
+        <div class="static-box">This is <b>static</b> positioning (default).</div>
+        <div class="relative-box">This is <b>relative</b> positioning (moved from its normal spot).</div>
+        <div class="absolute-box">This is <b>absolute</b> positioning (placed relative to the container).</div>
+    </div>
+    
+    <div style="height: 400px;">
+        <p>Scroll down to see the <b>fixed</b> box stay in the corner and the <b>sticky</b> box stick to the top.</p>
+    </div>
+    
+    <div class="fixed-box">This is <b>fixed</b> positioning (always in the corner).</div>
